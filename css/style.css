@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #eeeeee;
+    --gray-light: #fbfbfb;
+    --font-body: 'PT Sans', sans-serif;
+    --font-title: 'Libre Baskerville', serif;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    background-color: var(--gray-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+.container {
+    width: 90%;
+    margin: auto; /* Applique des marges extèrieurs pour centrer des éléments automatiquement  si largeur fixe  prédefini*/
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Cache le menu desktop sur la version mobile */
+
+.menu-desktop {
+    display: none;
+}
+
+/**
+* Header
+*/
+
+header {
+    text-align: center;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+header img {
+    width: 80%;
+    margin: 100px auto;
+}
+
+/* parti principale */
+
+main .card-project {
+    margin: 50px 0;
+}
+
+main .card-project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+main .card-project h2{
+    font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: normal;/* enlève l'épaisseur de la police de caractère */
+}
+
+.btn-light {
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+    
+}
+
+/**
+* News letter
+*/
+
+.newsletter {
+    background-color: var(--gray);
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.newsletter img{
+    width: 100%;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    margin: 50px 0;
+    width: 70%;
+}
+
+div .btn{
+    text-decoration: none;
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    padding: 12px 0; 
+}
+
+/* footer */
+
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* système de grille */
+    grid-gap: 10px;
+    margin: 50px 0;
+    list-style: none;
+    padding: 0;
+  
+}
+
+footer ul li {
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    padding: 12px;
+    text-align: center;
+}
+
+footer ul li a {
+    color: var(--black);
+}
+
+
