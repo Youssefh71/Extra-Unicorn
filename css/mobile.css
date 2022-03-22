@@ -11,7 +11,7 @@
 
 *{
     margin: 0;
-}
+    }
 
 body {
     font-family: var(--font-body);
@@ -146,5 +146,4 @@ footer ul li {
 footer ul li a {
     color: var(--black);
 }
-
 
